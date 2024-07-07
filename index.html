@@ -10,6 +10,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      .modal-backdrop {
+        backdrop-filter: blur(12px);
+        --bs-backdrop-opacity: 1;
+        background-color: #37373794;
+      }
+    </style>
   </head>
   <body>
     <div class="container text-center my-4">
@@ -100,17 +107,31 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <form action="">
+                  <form class="text-start">
                     <label for="Name">Your Name</label><br />
-                    <input type="text" placeholder="Enter Full Name" /><br />
+                    <input
+                      type="text"
+                      placeholder="Enter Full Name"
+                      class="p-2 rounded border border-danger border-opacity-50 w-100"
+                    /><br />
                     <label for="Name">Your Email</label><br />
-                    <input type="email" placeholder="Enter Your Email" /><br />
+                    <input
+                      type="email"
+                      placeholder="Enter Your Email"
+                      class="p-2 rounded border border-danger border-opacity-50 w-100"
+                    /><br />
                     <label for="Name">Your Number</label><br />
-                    <input type="tel" placeholder="mobile number" /><br />
+                    <input
+                      type="tel"
+                      placeholder="mobile number"
+                      class="p-2 rounded border border-danger border-opacity-50 w-100"
+                    /><br />
+                    <label for="messagebox">Your Message Here</label><br />
                     <textarea
                       name="message"
                       id="mess"
                       placeholder="Enter your Message here"
+                      class="p-1 rounded border border-danger border-opacity-50 w-100"
                     >
                     </textarea>
                   </form>
@@ -123,7 +144,7 @@
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <button type="submit" class="btn btn-primary">
                     Understood
                   </button>
                 </div>
