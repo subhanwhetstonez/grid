@@ -80,7 +80,7 @@
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
           >
-            Launch static backdrop modal
+            Launch static Form modal
           </button>
 
           <!-- Modal -->
@@ -97,7 +97,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Modal title
+                    Data Entry Form
                   </h1>
                   <button
                     type="button"
@@ -107,7 +107,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <form class="text-start">
+                  <form class="text-start" action="POST">
                     <label for="Name">Your Name</label><br />
                     <input
                       type="text"
@@ -144,8 +144,8 @@
                   >
                     Close
                   </button>
-                  <button type="submit" class="btn btn-primary">
-                    Understood
+                  <button type="submit" class="btn btn-danger btn-opacity-50">
+                    Submit
                   </button>
                 </div>
               </div>
